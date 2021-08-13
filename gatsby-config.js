@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -12,9 +13,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
+        // eslint-disable-next-line no-undef
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -34,4 +37,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
