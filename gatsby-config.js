@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   siteMetadata: {
-    title: `Detideda`,
-    description: `The official Detideda website. The rock band from Yaroslavl.`,
+    title: `DetiDeda`,
+    description: `The official DetiDeda website. The rock band from Yaroslavl.`,
     author: `@fedorskvortsov`,
     siteUrl: `https://detideda.ru/`,
   },
@@ -23,9 +23,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Detideda`,
-        short_name: `Detideda`,
-        description: `The official Detideda website.`,
+        name: `DetiDeda`,
+        short_name: `DetiDeda`,
+        description: `The official DetiDeda website.`,
         lang: `ru`,
         start_url: `/`,
         background_color: `#663399`,
