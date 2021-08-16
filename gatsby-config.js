@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Detideda`,
+    description: `The official Detideda website. The rock band from Yaroslavl.`,
+    author: `@fedorskvortsov`,
+    siteUrl: `https://detideda.ru/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
