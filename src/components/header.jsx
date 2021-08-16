@@ -4,14 +4,17 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Navbar bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">{siteTitle}</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Главная</Nav.Link>
-          <Nav.Link href="#features">Группа</Nav.Link>
-          <Nav.Link href="#pricing">Альбомы</Nav.Link>
-        </Nav>
+        <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Главная</Nav.Link>
+            <Nav.Link href="#group">Группа</Nav.Link>
+            <Nav.Link href="#albums">Альбомы</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   </header>
