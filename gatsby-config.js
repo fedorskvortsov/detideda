@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   siteMetadata: {
     title: `DetiDeda`,
@@ -13,11 +12,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        // eslint-disable-next-line no-undef
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
+    `gatsby-plugin-mdx`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -33,6 +39,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        legacy: false,
         icons: [
           {
             src: `/favicons/android-chrome-192x192.png`,
