@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 // eslint-disable-next-line no-undef
 const path = require("path");
+
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   actions.setWebpackConfig({
     resolve: {

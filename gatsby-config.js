@@ -15,13 +15,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/content`,
-      },
-    },
     `gatsby-plugin-mdx`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
@@ -38,20 +31,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-512x512.png`, // This path is relative to the root of the site.
         legacy: false,
-        icons: [
-          {
-            src: `/favicons/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicons/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ], // Add or remove icon sizes as desired
       },
     },
     `gatsby-plugin-gatsby-cloud`,

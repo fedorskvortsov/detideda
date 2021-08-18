@@ -25,7 +25,7 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/about/">Go to About page</Link> <br />
+      <Link to="/about/">Go to About page</Link>
     </p>
   </Layout>
 );
