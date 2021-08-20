@@ -9,7 +9,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:prettier/recommended",
   ],
-  parser: "babel-eslint",
+  parser: "@babel/eslint-plugin",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
