@@ -1,13 +1,16 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "components/layout";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const Person = ({ data }) => {
-  const { name, role } = data.mdx.frontmatter;
+  const { frontmatter: { name, role}, body } = data.mdx;
+  // TODO: add person image here
   return (
     <Layout>
       <h2>{name}</h2>
       <p>{role}</p>
+      <MDXRenderer>{body}</MDXRenderer>
     </Layout>
   );
 };
@@ -19,6 +22,7 @@ export const query = graphql`
         name
         role
       }
+      body
     }
   }
 `;
