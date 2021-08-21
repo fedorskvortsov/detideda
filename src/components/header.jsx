@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Главная</Nav.Link>
-            <Nav.Link href="#group">Группа</Nav.Link>
+            <Nav.Link href="/team">Группа</Nav.Link>
             <Nav.Link href="#albums">Альбомы</Nav.Link>
           </Nav>
         </Navbar.Collapse>
