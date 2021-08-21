@@ -9,7 +9,7 @@ const Footer = () => (
     <Nav className="justify-content-center">
       {socialLinks.map(({ name, link }, index) => {
         return (
-          <Nav.Link key={name} href={link} target="_blank">
+          <Nav.Link key={name} href={link} target="_blank" rel="noreferrer noopener">
             <FontAwesomeIcon icon={getIconByName(name)} />
           </Nav.Link>
         );
