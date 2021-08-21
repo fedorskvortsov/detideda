@@ -1,5 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
+$large_padding: 60px;
+
+.large-padding {
+  padding-top: $large_padding;
+  padding-bottom: $large_padding;
+}
+
 body {
   font-family: "Open Sans";
 }
