@@ -29,8 +29,14 @@ module.exports = {
         path: `${__dirname}/src/albums`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `songs`,
+        path: `${__dirname}/src/songs`,
+      },
+    },
     `gatsby-plugin-mdx`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
