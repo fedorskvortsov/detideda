@@ -3,14 +3,20 @@ import { Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socialLinks from "data/social-links.yml";
 import { getIconByName } from "util/mapper/icon-mapper";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Footer = () => (
   <footer className="text-center">
     <Nav className="justify-content-center">
       {socialLinks.map(({ name, link }, index) => {
         return (
-          <Nav.Link key={name} href={link} target="_blank" rel="noreferrer noopener">
-            <FontAwesomeIcon icon={getIconByName(name)} />
+          <Nav.Link
+            key={name}
+            href={link}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FontAwesomeIcon icon={getIconByName(name)} /> {name}
           </Nav.Link>
         );
       })}
