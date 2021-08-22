@@ -7,6 +7,11 @@ $large_padding: 60px;
   padding-bottom: $large_padding;
 }
 
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   font-family: "Open Sans";
 }

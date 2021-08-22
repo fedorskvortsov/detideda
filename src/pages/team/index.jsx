@@ -6,8 +6,6 @@ import Layout from "components/layout";
 import Seo from "components/seo";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-import { teamLink } from "./index.module.css";
-
 const Team = ({ data }) => {
   const { allMdx } = data;
 
@@ -30,7 +28,7 @@ const Team = ({ data }) => {
 
               return (
                 <Col key={id} md={4}>
-                  <Link className={teamLink} to={`/team/${slug}`}>
+                  <Link className="card-link" to={`/team/${slug}`}>
                     <Card>
                       <GatsbyImage
                         className="card-img-top"
