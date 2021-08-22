@@ -16,7 +16,7 @@ const Footer = () => (
             target="_blank"
             rel="noreferrer noopener"
           >
-            <FontAwesomeIcon icon={getIconByName(name)} /> {name}
+            <FontAwesomeIcon icon={getIconByName(name)} /> {name.toUpperCase()}
           </Nav.Link>
         );
       })}
