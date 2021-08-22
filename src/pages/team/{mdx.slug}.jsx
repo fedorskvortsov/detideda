@@ -1,13 +1,18 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "components/layout";
+import Seo from "components/seo";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const Person = ({ data }) => {
-  const { frontmatter: { name, role}, body } = data.mdx;
+  const {
+    frontmatter: { name, role },
+    body,
+  } = data.mdx;
   // TODO: add person image here
   return (
     <Layout>
+      <Seo title={name} />
       <h2>{name}</h2>
       <p>{role}</p>
       <MDXRenderer>{body}</MDXRenderer>
