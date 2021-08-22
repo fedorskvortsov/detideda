@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
           <Nav className="me-auto">
             <Nav.Link href="/">Главная</Nav.Link>
             <Nav.Link href="/team">Группа</Nav.Link>
-            <Nav.Link href="#albums">Альбомы</Nav.Link>
+            <Nav.Link href="/albums">Альбомы</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
