@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Footer from "./Footer";
 
 function Layout() {
   const { t, i18n } = useTranslation();
@@ -29,6 +30,8 @@ function Layout() {
       </button>
 
       <Outlet />
+
+      <Footer />
     </div>
   );
 }
