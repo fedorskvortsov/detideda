@@ -5,32 +5,34 @@ import {
   FaVk,
 } from 'react-icons/fa';
 
+import styles from "./Footer.module.css";
+
 const links = [
-  { icon: <FaVk />, name: "vk", url: "https://www.vk.com/deti_deda" },
+  { icon: FaVk, name: "vk", url: "https://www.vk.com/deti_deda" },
   {
-    icon: <FaSoundcloud />,
+    icon: FaSoundcloud,
     name: "Soundcloud",
     url: "https://www.soundcloud.com/detideda",
   },
   {
-    icon: <FaYoutube />,
+    icon: FaYoutube,
     name: "Youtube",
     url: "https://www.youtube.com/channel/UCX7hAd8zLnv6_cgDiyHFo_w",
   },
 ];
 
-const Footer = () => (
-  <footer>
-    <nav>
-      {links.map(({ icon, name, url }) => {
+const Footer: React.FC = () => (
+  <footer className={styles.footer}>
+    <nav className={styles.nav}>
+      {links.map(({ icon: Icon, name, url }) => {
         return (
-          <a key={name} href={url} target="_blank" rel="noreferrer noopener">
-            {icon} {name.toUpperCase()}
+          <a className={styles.navLink} key={name} href={url} target="_blank" rel="noreferrer noopener">
+            <Icon className={styles.navIcon} />
           </a>
         );
       })}
     </nav>
-    <div>Detideda 2022 &copy;</div>
+    <div className={styles.copyright}>Detideda 2022 &copy;</div>
   </footer>
 );
 

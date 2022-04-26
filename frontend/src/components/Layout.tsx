@@ -1,7 +1,10 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Footer from "./Footer";
+import Header from "./Header";
+
+import styles from "./Layout.module.css";
 
 function Layout() {
   const { t, i18n } = useTranslation();
@@ -10,18 +13,8 @@ function Layout() {
   };
 
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-
+    <div className={styles.container}>
+      <Header /> 
       <button type="button" onClick={() => changeLanguage("ru")}>
         ru
       </button>

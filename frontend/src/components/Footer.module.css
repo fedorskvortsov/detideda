@@ -1,0 +1,47 @@
+.footer {
+  text-align: center;
+}
+
+.footer .nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .nav .navLink {
+  color: #eeeeee;
+  background-color: #333333;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  transition-duration: 280ms;
+}
+
+.footer .nav .navLink:hover {
+  color: #5500aa;
+  background-color: #eeeeee;
+  border: 2px solid #5500aa;
+}
+
+@media (min-width: 43em) {
+  .footer .nav {
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  font-weight: 600;
+  color: #5500aa;
+}
+
+.navIcon {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
